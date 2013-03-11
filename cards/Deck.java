@@ -1,3 +1,5 @@
+import java.util.Random;
+
 
 public class Deck {
 
@@ -27,5 +29,17 @@ public class Deck {
 	public void showDeck() {
 		for (int i=0; i < MAXCARDS; i++)
 			System.out.println(deck[i].getSuit().toString() + " of " + deck[i].getRank().toString());
+	}
+	
+	// pull a random card
+	// put it back into the deck
+	
+	public Card getRandomCard() {
+		
+		Random rand = new Random();
+		
+		int randint = Math.abs(rand.nextInt())%52;
+		
+		return deck[randint];
 	}
 }
