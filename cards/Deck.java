@@ -38,7 +38,7 @@ public class Deck {
 		
 		Random rand = new Random();
 		
-		int randint = Math.abs(rand.nextInt())%52;
+		int randint = Math.abs(rand.nextInt())%MAXCARDS;
 		
 		return deck[randint];
 	}
