@@ -10,6 +10,7 @@ public class Card {
 		// System.out.println(this.suit);
 	}
 	
+	// return suit
 	public Suit getSuit() {
 		return suit;
 	}
