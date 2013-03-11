@@ -12,7 +12,8 @@ public class Deck {
 		i = 0;
 		
 		deck = new Card[MAXCARDS];
-		
+	
+		// initialize the deck with cards
 		for (Suit suit : Suit.values()) {
 			for (Rank rank : Rank.values()) {
 				if (i < MAXCARDS) {
